@@ -1,0 +1,38 @@
+{
+  "version": "2.0",
+  "dataset_id": "on004642",
+  "source": "openneuro",
+  "source_id": "ds004642",
+  "title": "Intraoperative recordings of medianus stimulation with low and high impedance ECoG",
+  "authors": {
+    "Vasileios Dimakopoulos": {},
+    "Marian Neidert": {},
+    "Johannes Sarnthein": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds004642.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.4.0",
+  "recording_modality": [
+    "ieeg"
+  ],
+  "datatypes": [
+    "ieeg"
+  ],
+  "funding_references": [
+    {
+      "funder_name": "Swiss National Science Foundation, SNSF 204651"
+    },
+    {
+      "funder_name": "Alexander S. Onassis Public Benefit Foundation Scholarship"
+    }
+  ],
+  "acknowledgements": "We acknowledge a grant awarded by the Swiss National Science Foundation (funded by the SNSF 204651 to JS) and a scholarship awarded by the Alexander S. Onassis Public Benefit Foundation (to VD). The funders had no role in the design or analysis of the study"
+}
