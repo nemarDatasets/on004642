@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Intraoperative recordings of medianus stimulation with low and high impedance ECoG",
+  "description": "This dataset comprises intraoperative intracranial EEG recordings from 10 patients undergoing brain tumor resection in the perirolandic region. Median nerve somatosensory evoked potentials (SEP) were recorded simultaneously using two 4-contact ECoG electrode strips with different impedance characteristics (low impedance: 3.4 kΩ and high impedance: 6.9 kΩ) to investigate the efficacy of low-impedance electrodes for detecting high-frequency oscillations in clinical neurophysiology.",
+  "methods_description": "Intraoperative median nerve stimulation at 4.7 Hz was recorded from two simultaneous 4-contact ECoG strips with different impedance profiles. Raw continuous ECoG data were acquired and processed offline using custom MATLAB scripts. Data analysis included high-pass filtering (200 Hz cutoff), stimulus artifact detection via local peak detection, sweep definition (50 ms post-stimulus), artifact rejection (±100 µV amplitude threshold), and averaging of 100 sweeps. Bandpass filtering was applied at [30-300] Hz for N20 analysis, [250-500] Hz for fast ripple detection, and [500-1000] Hz for high-frequency oscillation analysis.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -13,12 +15,27 @@
       "orcid": "0000-0001-9141-381X"
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004642.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "intracranial EEG"
     },
+    {
+      "term": "ECoG"
+    },
+    {
+      "term": "high-frequency oscillations"
+    },
+    {
+      "term": "somatosensory evoked potentials"
+    },
+    {
+      "term": "electrode impedance"
+    },
+    {
+      "term": "intraoperative monitoring"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on004642",
       "identifier_type": "URL",
@@ -33,6 +50,11 @@
       "identifier": "10.1016/j.clinph.2023.07.002",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004642.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -48,43 +70,20 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "1.3 GB (18 files)"
   ],
   "formats": [
     ".edf",
     ".json",
     ".m",
     ".md",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "This dataset comprises intraoperative intracranial EEG (ECoG) recordings from 10 patients undergoing brain tumor resection in the perirolandic region. The study compares fast ripple detection capabilities between low-impedance (3.4 kΩ) and high-impedance (6.9 kΩ) ECoG electrode contacts during median nerve somatosensory evoked potential (SEP) recordings. The dataset includes continuous raw ECoG data from bilateral 4-contact electrode strips recorded simultaneously at a stimulation rate of 4.7 Hz, enabling investigation of electrode impedance effects on high-frequency oscillation detection in clinical neurophysiology.",
-  "methods_description": "Intraoperative ECoG recordings were obtained from two 4-contact electrode strips with different impedance characteristics (LoZ: 3.4 kΩ median impedance; HiZ: 6.9 kΩ median impedance) positioned over the hand area. Median nerve stimulation was delivered at 4.7 Hz. Data processing included high-pass filtering (200 Hz cutoff) for stimulus artifact detection, sweep definition with 50 ms post-stimulus recording length, artifact rejection (±100 µV amplitude threshold), and averaging of 100 sweeps. Frequency-domain analysis was performed using bandpass filtering in the N20 (30-300 Hz), fast ripple (250-500 Hz), and high-frequency oscillation (500-1000 Hz) bands.",
-  "keywords": [
-    {
-      "term": "Electrocorticography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
-    },
-    {
-      "term": "high frequency oscillations"
-    },
-    {
-      "term": "somatosensory evoked potentials"
-    },
-    {
-      "term": "electrode impedance"
-    },
-    {
-      "term": "intraoperative monitoring"
-    },
-    {
-      "term": "intracranial EEG"
-    }
-  ],
-  "source_hash": "c99d7a024cbf01cd2ee4e21de4b71e7b44541267657386936571e74deabefc2e"
+  "source_hash": "442e1919ce590f704fe7707b4daa789a0c1c61cad8eba357720b81e492b89d16"
 }
