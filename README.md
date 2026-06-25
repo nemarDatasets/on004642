@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004642-blue)](https://doi.org/10.82901/nemar.on004642)
+
  ## Intraoperative recordings of medianus stimulation with low and high impedance ECoG
 This dataset of medianus SEP was first analyzed in publication [1]. There we investigated whether the low impedance ECoG electrode (LoZ) improves fast ripple detection over a standard electrode with high impedance contacts (HiZ).
 There are 10 patients (median age 40 y, range 19-56 y, 6 female) who underwent brain tumor resections in the perirolandic region at our institution. The data includes the continuous raw data from the ECoG contacts of both electrodes. We recorded medianus SEP intraoperatively (stimulation rate = 4.7 Hz) from two 4-contacts ECoG strips simultaneously (LoZ: a contacts, HiZ: b contacts) that had different median impedance (LoZ: 3.4 kΩ, HiZ: 6.9 kΩ).
